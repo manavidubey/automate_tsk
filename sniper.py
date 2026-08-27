@@ -6,11 +6,12 @@ Uses aiohttp and asyncio for bare-metal multi-threaded speed.
 
 import asyncio
 import aiohttp
+from aiohttp import web
 import json
 import logging
 import sys
 import os
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import List, Dict, Any, Optional
 
 try:
@@ -306,22 +307,47 @@ async def test_my_tasks():
         except Exception as e:
             logger.error(f"❌ Test crashed: {e}")
 
+async def handle_health(request):
+    return web.json_response({"status": "healthy", "time": datetime.now(timezone.utc).isoformat()})
+
+async def start_background_tasks(app):
+    app['sniper_task'] = asyncio.create_task(poll_loop())
+    yield
+    logger.info("Cancelling background sniper task...")
+    app['sniper_task'].cancel()
+    try:
+        await app['sniper_task']
+    except asyncio.CancelledError:
+        pass
+    logger.info("Background sniper task stopped.")
+
+def run_web_server():
+    app = web.Application()
+    app.add_routes([web.get('/', handle_health)])
+    app.cleanup_ctx.append(start_background_tasks)
+    
+    port = int(os.environ.get("PORT", "10000"))
+    logger.info(f"Starting web server on port {port}...")
+    web.run_app(app, host="0.0.0.0", port=port, handle_signals=True)
+
 if __name__ == "__main__":
     print("\n=== DYNAMO TASK SNIPER (ASYNC MULTI-THREADED EDITION) ===")
     print("1. Start Polling (Sniper Mode)")
     print("2. Test Connection (Available Tasks)")
     print("3. Test Connection (My Past Tasks)")
     try:
-        if sys.stdin.isatty():
+        if sys.stdin.isatty() and not os.environ.get("PORT") and not os.environ.get("RENDER"):
             choice = input("Enter 1, 2, or 3: ").strip()
         else:
-            logger.info("Non-interactive environment detected. Auto-starting Polling (Sniper Mode)...")
-            choice = "1"
+            logger.info("Non-interactive or deployment environment detected. Auto-starting Web Server with Sniper...")
+            choice = "web"
 
         if choice == "2":
             asyncio.run(test_connection())
         elif choice == "3":
             asyncio.run(test_my_tasks())
+        elif choice == "web":
+            run_web_server()
         else:
             asyncio.run(poll_loop())
     except KeyboardInterrupt:

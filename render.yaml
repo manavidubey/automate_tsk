@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: handshake-sniper
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python sniper.py
+    envVars:
+      - key: HANDSHAKE_COOKIE
+        sync: false
+        placeholder: "Paste your raw handshake Cookie here"
+      - key: ANNOTATION_PROJECT_ID
+        value: "a1d39753-ae51-41df-8c86-2b7e73c6bd6b"
+      - key: CLAIMER_ID
+        value: "4353a90c-e8b8-4350-8ac1-2d0d0ff9ed94"
+      - key: POLL_INTERVAL
+        value: "1"
