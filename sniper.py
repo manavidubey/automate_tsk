@@ -27,7 +27,13 @@ ANNOTATION_PROJECT_ID = os.environ.get("ANNOTATION_PROJECT_ID", "a1d39753-ae51-4
 CLAIMER_ID = os.environ.get("CLAIMER_ID", "4353a90c-e8b8-4350-8ac1-2d0d0ff9ed94")
 BASE_URL = "https://ai.joinhandshake.com/api/trpc"
 
-DEFAULT_COOKIE = "ajs_anonymous_id=3fbb2d34-c897-480c-aa10-7671aa3bf0c3; _ga=GA1.1.324925805.1785220357; _rdt_uuid=1785220357121.e366c572-9f00-4deb-bca5-607a80223ed0; li_fat_id=85929337-d448-42da-a095-0b3c5500fa50; _fbp=fb.1.1785220357226.647220892511102692; hss-global=eyJhbGciOiJkaXIiLCJjdHkiOiJKV1QiLCJlbmMiOiJBMjU2Q0JDLUhTNTEyIiwidHlwIjoiSldUIn0..yQki_-rS0XzFcDarcBpENw.xlVJ64NNsF6Zoc--wsifnyu2LvuREWC2isf9i249Gyi9wEzU61hjRCBRAoSrjVpZ13cwQq2butt2xZWU6fHGHpuQtvRW0nJd_nFKTmMdxP2rrkcMFq3wezTKUHfykWSxL38jNW4DJf-6Pi95JjkCXzNkat1sh8eCvYHIiPnlykm1hm2K4SSvm7TlLUCAfQHe7N4b8wVuIjrg1CVsOAzIjOiyH6RVj-Ffcmf9vP-7Gd2BawqcgfXQPftheEXOkhXhTxE_E9KnI6CrXbap-o3_fjDejzRndp-Ap1CTXSZ0TcngqQrbVZTCi26tT4YEyoxl-caSMiotwrJw6fjjEtCOcG2AgVvw0jMgNKgcmbMCTWF6m9Zv1rgcjUVFhCU9kvg2.oPKJOv8bvMdCi342V5zCXjIEx58dOin0kMOybd0dKjA; hss-marketing=students; _uetvid=2047ebb08a4e11f180ecf1a00a111bf9; ajs_user_id=81719188; _ga_4M16ZMP2G5=GS2.1.s1785220356$o1$g1$t1785220395$j21$l0$h0; iterableEndUserId=manavidubey%40gmail.com; utm_utm_source=iterable; utm_utm_campaign=MOVE%20All_All_Onboarding%20Nudge_Kyoto_Dynamo_a1d39753-ae51-41df-8c86-2b7e73c6bd6b_NA_PSO_NA_3; utm_utm_medium=email; utm_campaignid=18862544; utm_domain=all; utm_degree=all; request_method=POST; _cfuvid=4Nz8XsD373Jk2xRQ4QuX88nTu0jzqMTCw5upfR3ujeM-1787169917.4921496-1.0.1.1-QJz9CwQLKY0nZ7HpjgUIMNrNSCuBoEKPJd50gC4.6ck; __cf_bm=qu7oorRWNCS.AfCZWdzipfhDCUQvYD.oRL86jSaFUaI-1787222851.667121-1.0.1.1-3cZGGbnIF3RlU4CRSrL8K5TUM1jY2O8QvRPAmdde1B80v5nNfOw2iL0D8Qa9esWL0gw0HzZ9W2hY.hbxlq13eSIgQoqQLLW5pFeVyI98Lbx19ONVdezilXkZFW.YH..u; _gcl_au=1.1.1191554340.1785220357.-.-.1785225861.267949297.1787140606.1787223208; _ga_SHCDNG08QG=GS2.1.s1787222643$o23$g1$t1787223208$j59$l0$h0; fs_lua=1.1787223208636; fs_uid=#H7TB#43238137-949e-4d55-996b-c2b4980cee93:7b731ded-ff74-4687-a8c0-d16396868338:1787222648614::2#1d48de08###/1816756500; _trajectory_session=fzgTaWBbVR1Xwvicqz55Jl2XMb%2Fb4Lv4PJEwxkLGudqjQCexGoVVFiMgCiI%2F0xKKmtIuCSOzxrVz90zByJYrxjRa5NplKYhaytcLKZ%2BwQsuVtesKYmwFro3BD04NHuVgl5b22H8zpxD2B70S4w%2BF6y7ER7%2F14w%2BdUaNUeDEKLD8Zu5CzyxPIpxI8Rw%3D%3D--u52fepgrQOc9%2F63O--wwP8tblE4tIqRzNqWQGVkw%3D%3D; _dd_s_v2=aid=afb0571a-9288-4e5f-9fff-b091d6c14275&id=78922374-2965-49c9-b423-61d0d8208d71&created=1787222643730&expire=1787224118590&c=0"
+DEFAULT_COOKIE = (
+    "hss-global=eyJhbGciOiJkaXIiLCJjdHkiOiJKV1QiLCJlbmMiOiJBMjU2Q0JDLUhTNTEyIiwidHlwIjoiSldUIn0..IfyHKDwsdrJmAWeILXp7kA.HV40BSaaX_YkeYtKj7_CmJA74hvxZiD1psxXtf9bUZo4SI6Tymk-ffbCF84ye7-Mw0SjWhUGYl-wHXSF0RTMbidMfFG_fww7k1FmwYHPL0e09adtxdg4Dins62j86vrJRpkUnsmRz8Geeha5Nf-JUpfOzY2Z7rX3YGlnKoPJ0iZscX1fgVQOSR8MW03i1NHgPjoIsjn_9PVeB8UIkGLT62AU6UbkU_Yao0TE5Jo4oW5fZo2Vz1fNgfqGzdQGSGqA_DpLTpHKu0SEYTmv7iCwjyRqJtdVnYAhcnI0JJkUzdkfixFLcMIKIUw0DcNSVTcO9NAnbbhNRSrISf_K-1dpVVLEmfRZGOv8DrVfkVRv_V2I6Dq3rANpIWx5BX0E1-_U.mp1phWQI4r0fJ1Rr12Rt_jVGdulHDE6Sn1g2PtrftWM; "
+    "production_current_user=81719188; "
+    "_cfuvid=m_SoT.scmgKDSXRFjQIInZYZzPgMwRLlOcsSQiTen6g-1789534781.116983-1.0.1.1-XldQAGDL8lqY3lTSdpXeFukCyyfYhZz00BLoIKdV6oo; "
+    "__cf_bm=mbQ1jSMUHiErr7PH6T3AZEOKBPw9Sd2hdqI0qfs5adM-1789559097.7216046-1.0.1.1-55hrSu_6Cl7843X85GxvKIqzsjqXzJefd45j99EQITwHBWEkUhgOMhsWUaNCJoaFXiHDBne3p9rAgkbiOfY0Wd.PcTUT8Dx1bJXGWccIiHeHZr559k0NeHNo7ESEWtqT; "
+    "_trajectory_session=htz3ZmMw%2FuXbfTa6FIi7SCfO9ZCSw%2B%2FlhP%2FPmu%2FGp%2B6RzzJUAlCuYqyd3AByzC%2BIyUlz31IihArmPhre8lh7MDporcRzJCYP3zqJ2Bwx7%2F7%2BH%2BHDJF%2FyD4vTTsuTlSyCazMI4XBJ6OJmfLALFB1UJ8FEWREtx9O3EEcaPPPaFsUcvNxHA%2Br7IN%2F2cs2qj9xjVUyhYTuzzsowa3mNMCgi--zSsTEW6IG7eoBpiv--echp%2FgPAzJg9jog9xniH5g%3D%3D"
+)
 COOKIE = os.environ.get("HANDSHAKE_COOKIE") or os.environ.get("COOKIE") or DEFAULT_COOKIE
 
 HEADERS = {
@@ -104,6 +110,9 @@ async def fetch_tasks(session: aiohttp.ClientSession, offset: int = 0) -> tuple[
         async with session.get(GET_TASKS_URL, params=params, timeout=10) as resp:
             if resp.status == 429:
                 return None, True
+            if resp.status == 401:
+                logger.error("🔑 HTTP 401 Unauthorized: Your Handshake session cookie has expired or is invalid! Please extract a fresh Cookie from your browser and set HANDSHAKE_COOKIE.")
+                return None, False
             resp.raise_for_status()
             data = await resp.json()
             tasks = data[0].get("result", {}).get("data", {}).get("json", {}).get("tasks", [])
