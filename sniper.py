@@ -23,16 +23,16 @@ try:
 except ImportError:
     playsound = None
 # ---------- CONFIGURATION ----------
-ANNOTATION_PROJECT_ID = os.environ.get("ANNOTATION_PROJECT_ID", "a1d39753-ae51-41df-8c86-2b7e73c6bd6b")
+ANNOTATION_PROJECT_ID = os.environ.get("ANNOTATION_PROJECT_ID", "4f4aadda-9a87-4273-9434-67231b2d98e0")
 CLAIMER_ID = os.environ.get("CLAIMER_ID", "4353a90c-e8b8-4350-8ac1-2d0d0ff9ed94")
 BASE_URL = "https://ai.joinhandshake.com/api/trpc"
 
 DEFAULT_COOKIE = (
-    "hss-global=eyJhbGciOiJkaXIiLCJjdHkiOiJKV1QiLCJlbmMiOiJBMjU2Q0JDLUhTNTEyIiwidHlwIjoiSldUIn0..IfyHKDwsdrJmAWeILXp7kA.HV40BSaaX_YkeYtKj7_CmJA74hvxZiD1psxXtf9bUZo4SI6Tymk-ffbCF84ye7-Mw0SjWhUGYl-wHXSF0RTMbidMfFG_fww7k1FmwYHPL0e09adtxdg4Dins62j86vrJRpkUnsmRz8Geeha5Nf-JUpfOzY2Z7rX3YGlnKoPJ0iZscX1fgVQOSR8MW03i1NHgPjoIsjn_9PVeB8UIkGLT62AU6UbkU_Yao0TE5Jo4oW5fZo2Vz1fNgfqGzdQGSGqA_DpLTpHKu0SEYTmv7iCwjyRqJtdVnYAhcnI0JJkUzdkfixFLcMIKIUw0DcNSVTcO9NAnbbhNRSrISf_K-1dpVVLEmfRZGOv8DrVfkVRv_V2I6Dq3rANpIWx5BX0E1-_U.mp1phWQI4r0fJ1Rr12Rt_jVGdulHDE6Sn1g2PtrftWM; "
+    "hss-global=eyJhbGciOiJkaXIiLCJjdHkiOiJKV1QiLCJlbmMiOiJBMjU2Q0JDLUhTNTEyIiwidHlwIjoiSldUIn0..xZa94IxlJamrycIxvAmkhQ.q9_fzhbPyRdBkGckOCWfgQvLxdymdlT_-dEluihw1E18p5wVszD0b3EPULFXmgRCCk6YzUpaEGAEcEXUerICKYfePYRB7exeXlbLGcTQvKUQye5ZYVGUK--0DAXvOfeiiKUcwqhoBRoMJ-BsZGgVN4RE3AmNnNQYd5jfNGYt9Z5HsmmzmAX1fClmmyi5aOuD9d8Q0-EVIQueFUwvwj2T8V3k4vmh_3K7WNy7xPGDlors0eH70fOtPVg_Xv-UtelhGBXL1Ghuzg7kA0Cm0780xbg_f2AhEo8kA-VGnW72TLi6KKqz2Fys5ne15ueSsaafR5DnFgo-NEKH3G8czO9UEe2sfxdmFNRAV9P0rPc6oUDcO9XuSxqeFvcQpLEmHTyN.oPxPfpqkeqJrEtqfauhqlqAXkFZgD0-LzBPkleSnRfk; "
     "production_current_user=81719188; "
-    "_cfuvid=m_SoT.scmgKDSXRFjQIInZYZzPgMwRLlOcsSQiTen6g-1789534781.116983-1.0.1.1-XldQAGDL8lqY3lTSdpXeFukCyyfYhZz00BLoIKdV6oo; "
-    "__cf_bm=mbQ1jSMUHiErr7PH6T3AZEOKBPw9Sd2hdqI0qfs5adM-1789559097.7216046-1.0.1.1-55hrSu_6Cl7843X85GxvKIqzsjqXzJefd45j99EQITwHBWEkUhgOMhsWUaNCJoaFXiHDBne3p9rAgkbiOfY0Wd.PcTUT8Dx1bJXGWccIiHeHZr559k0NeHNo7ESEWtqT; "
-    "_trajectory_session=htz3ZmMw%2FuXbfTa6FIi7SCfO9ZCSw%2B%2FlhP%2FPmu%2FGp%2B6RzzJUAlCuYqyd3AByzC%2BIyUlz31IihArmPhre8lh7MDporcRzJCYP3zqJ2Bwx7%2F7%2BH%2BHDJF%2FyD4vTTsuTlSyCazMI4XBJ6OJmfLALFB1UJ8FEWREtx9O3EEcaPPPaFsUcvNxHA%2Br7IN%2F2cs2qj9xjVUyhYTuzzsowa3mNMCgi--zSsTEW6IG7eoBpiv--echp%2FgPAzJg9jog9xniH5g%3D%3D"
+    "_cfuvid=nkLzmixgogs6XsV5FJe2zQW15Kd7SlMqmMGIrp2Mfqw-1791620133.8285954-1.0.1.1-0ATlxespBP7.Y9GLyKd_vLYl30I5wbEZfU028bNAuwo; "
+    "__cf_bm=Qxn6c7WADY8J9UDBxXpm5tnChnes0eEPUJxAHhDJB5k-1791720536.4220302-1.0.1.1-fbkvDNpH5tk7TuExsccwEFtLLt2kQLUFSZQOKNyaiB6Cz6buUh4JaVNR6oM7AhLtEfbUzHr9eOSq.AjljVGcJRex5azUFNsDHP4mEELtqwRGQXi9dpWeFbL_4W7cuKUJ; "
+    "_trajectory_session=xeWKRHr32JJ%2B%2BU3El%2FL74YNQ5TG1RJBroPfrV2ZGdx8WSy4ViUXBNPwpAse8mjB%2BD8%2BhhM8iBuzF0HhSPvAy%2FKyG2mLJc0Oe%2FvuyuyPTGIW%2Bf0pSnMlgD75GU2mlWcL9tWH%2FBmlBkJGlh60a17cIvIrg4B9%2FgYh6MBJZo4OzuUDm%2BbZgGCc9ZSUMJALUcPAVZUlbh6Rdil80zs6G1Q42acnlkCRovRfoBSuP--6wd%2F3ZdL%2B%2B5ptujO--RKMK%2BTeN3exjiswjedjyvw%3D%3D"
 )
 COOKIE = os.environ.get("HANDSHAKE_COOKIE") or os.environ.get("COOKIE") or DEFAULT_COOKIE
 
@@ -42,12 +42,13 @@ HEADERS = {
 }
 
 POLL_INTERVAL = float(os.environ.get("POLL_INTERVAL", "1"))
-INITIAL_BACKOFF = 5  # Reduced from 60 to grab tasks faster
-MAX_BACKOFF = 30
+INITIAL_BACKOFF = 1  # Start with just a 1 second delay
+MAX_BACKOFF = 3      # Never wait more than 3 seconds!
 backoff = INITIAL_BACKOFF
 
 GET_TASKS_URL = f"{BASE_URL}/task.getAllClaimableTasksForFellow"
 CLAIM_URL = f"{BASE_URL}/task.claimTask" 
+CLAIM_NEXT_TASK_URL = f"{BASE_URL}/task.claimNextTask"
 GET_MY_TASKS_URL = f"{BASE_URL}/task.listClaimedTasksForFellow"
 
 log_format = "%(asctime)s [%(levelname)s] %(message)s"
@@ -148,6 +149,32 @@ async def claim_task(session: aiohttp.ClientSession, task_id: str) -> tuple[bool
         logger.error(f"Claim request error: {e}")
         return False, False
 
+async def claim_next_task(session: aiohttp.ClientSession) -> tuple[bool, bool]:
+    payload = {
+        "0": {
+            "json": {
+                "annotationProjectId": ANNOTATION_PROJECT_ID
+            }
+        }
+    }
+    try:
+        params = {"batch": "1"}
+        async with session.post(CLAIM_NEXT_TASK_URL, params=params, json=payload, timeout=10) as resp:
+            if resp.status == 200:
+                logger.info("✅ Successfully claimed task via claimNextTask!")
+                return True, False
+            elif resp.status == 429:
+                text = await resp.text()
+                logger.warning(f"⛔ Rate limited on claimNextTask: {text[:100]}")
+                return False, True
+            else:
+                text = await resp.text()
+                logger.warning(f"⚠️ claimNextTask status {resp.status}: {text[:100]}")
+                return False, False
+    except Exception as e:
+        logger.error(f"claimNextTask error: {e}")
+        return False, False
+
 async def poll_loop():
     global backoff
     logger.info("🔫 Async Sniper started. Polling every %s seconds.", POLL_INTERVAL)
@@ -173,8 +200,8 @@ async def poll_loop():
                 
                 logger.info(f"📦 Found {len(tasks)} task(s) on page {offset//10 + 1}. Firing parallel claims!")
                 
-                # Shotgun fire all claims instantly!
-                claim_coroutines = []
+                # Shotgun fire all claims instantly: task.claimTask + task.claimNextTask
+                claim_coroutines = [claim_next_task(session)]
                 for task in tasks:
                     task_id = task.get("id")
                     if task_id:
